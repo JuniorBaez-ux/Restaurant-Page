@@ -38,6 +38,7 @@ body{
 /* Style for the navigation bar */
 /* Add a black background color to the top navigation */
 .topnav {
+    flex-grow: 1 ;
     order: 2;
     background-color: #3C3744;
     overflow: hidden;
