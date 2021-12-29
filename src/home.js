@@ -1,4 +1,4 @@
-let principal = document.getElementById("content");
+export let principal = document.getElementById("content");
 
 export function createTitle(){
     let title = document.createElement('div');

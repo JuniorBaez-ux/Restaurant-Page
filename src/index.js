@@ -1,9 +1,7 @@
 import _, { fill } from 'lodash';
 import './style.css';
-import { createHomePage, createTitle } from "./home.js";
-import { createNavBar } from "./home.js";
-import { createFillerText } from "./home.js";
-import { createText } from "./home.js";
+import { createHomePage} from "./home.js";
+import { createMenu } from "./menu.js";
 
 let principal = document.getElementById("content");
 
@@ -21,4 +19,8 @@ console.log("Tamo funcionando klk");
  
 //   document.body.appendChild(component());
 
-createHomePage();
+//Finished
+// createHomePage();
+
+//Finished
+//createMenu();

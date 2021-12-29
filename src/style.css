@@ -7,11 +7,16 @@ body{
 }
 
 #content{
+    flex-grow: 2;
     order: 3;
-   display: flex;
+    display: flex;
     flex-direction: column;
     background-color: #F9EBE0;
     height: 100vh;
+}
+
+img{
+    width: 400px; 
 }
 
 #background_photo{
@@ -24,9 +29,10 @@ body{
 }
 
 #title{
+    height: 10vh;
     order: 1;
     display: flex;
-    flex-grow: 1;
+    flex-grow: 2;
     justify-content: center;
     align-items: center;
     font-size: 2em;
