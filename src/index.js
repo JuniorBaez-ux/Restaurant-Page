@@ -2,6 +2,7 @@ import _, { fill } from 'lodash';
 import './style.css';
 import { createHomePage} from "./home.js";
 import { createMenu } from "./menu.js";
+import { createContact } from "./contact.js";
 
 let principal = document.getElementById("content");
 
@@ -24,3 +25,6 @@ console.log("Tamo funcionando klk");
 
 //Finished
 //createMenu();
+
+//Finished
+// createContact();

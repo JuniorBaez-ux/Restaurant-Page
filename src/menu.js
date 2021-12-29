@@ -2,7 +2,7 @@ import { createTitle } from "./home";
 import { createNavBar } from "./home";
 import { principal } from "./home";
 
-
+export let plateText;
 
 function createStructture(){
     document.body.appendChild(createTitle());
@@ -11,7 +11,7 @@ function createStructture(){
 
 createStructture();
 
-function createPlate(source, plateName, plateDescription){
+ export function createPlate(source, plateName, plateDescription){
     let plate = document.createElement("div");
     plate.className = "plate";
     principal.appendChild(plate);
@@ -20,7 +20,7 @@ function createPlate(source, plateName, plateDescription){
     return plate;
 }
 
-function createPlate1(source, plateName, plateDescription){
+export function createPlate1(source, plateName, plateDescription){
     let plate1 = document.createElement("div");
     plate1.className = "plate1";
     plate1.appendChild(assignImage(source));
@@ -29,39 +29,39 @@ function createPlate1(source, plateName, plateDescription){
     return plate1;
 }
 
-function createPlateText(plateName, plateDescription){
-    let plateText = document.createElement("div");
+export function createPlateText(plateName, plateDescription){
+    plateText = document.createElement("div");
     plateText.className = "plateText";
     plateText.appendChild(createName(plateName));
     plateText.appendChild(creataDescription(plateDescription));
     return plateText;
 }
 
-function assignImage(source){
+export function assignImage(source){
     let image = document.createElement("img");
     image.src = source;
 
     return image;
 }
 
-function createName(plateName){
+export function createName(plateName){
     let titulo = document.createElement("h3");
     titulo.innerHTML = plateName;
 
     return titulo;
 }
 
-function creataDescription(plateDescription){
+export function creataDescription(plateDescription){
     let descripcion = document.createElement("p");
     descripcion.innerHTML = plateDescription;
 
     return descripcion;
 }
-function createFirstRecipe(){
+export function createFirstRecipe(){
     createPlate("/src/imgs/Mangu.jpg", "Mangu", " El mangu es la especialidad del local, es un plato reconocido por su gran valor nutritivo y por la facil obtencion de sus ingredientes.");    
 }
 
-function createSecondRecipe(){
+export function createSecondRecipe(){
     createPlate("/src/imgs/arro.jpg", "La bandera", "La bandera es un termino utilizado para representar este plato que consiste en: Arroz blanco, Habichuelas y Carne (Generalmente de pollo)");
 }
 
