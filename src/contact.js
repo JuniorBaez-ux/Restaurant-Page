@@ -2,6 +2,7 @@ import { createTitle } from "./home";
 import { createNavBar } from "./home";
 import { principal } from "./home";
 import {createPlate, plateText} from "./menu";
+import './style2.css';
 
 let chef = assignPhoto("/src/imgs/chef.jpg");
 
@@ -34,6 +35,7 @@ function createManager(){
 }
 
 export function createContact(){
+    principal.innerHTML = "";
     createChef();
     createManager();
 }

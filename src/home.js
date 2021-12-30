@@ -12,9 +12,10 @@ export function createTitle(){
   export function createNavBar(){
     let navbar = document.createElement("div");
     navbar.className = "topnav";
-    navbar.innerHTML = "<a href='#'>Home</a>";
-    navbar.innerHTML += "<a href='#'>Menu</a>";
-    navbar.innerHTML += "<a href='#'>Contact</a>";
+    navbar.id = "navbar";
+    navbar.innerHTML = "<a id='home'>Home</a>";
+    navbar.innerHTML += "<a  id='menu'>Menu</a>";
+    navbar.innerHTML += "<a  id='contact'>Contact</a>";
 
     return navbar;
   }
@@ -36,8 +37,7 @@ export function createText(){
 }
 
 export function createHomePage(){
-    document.body.appendChild(createTitle());
-    document.body.appendChild(createNavBar());
+    principal.innerHTML = "";
     principal.appendChild(createFillerText());
     principal.appendChild(createFillerText());
 }

@@ -4,7 +4,7 @@ import { principal } from "./home";
 
 export let plateText;
 
-function createStructture(){
+export function createStructture(){
     document.body.appendChild(createTitle());
     document.body.appendChild(createNavBar());
 }
@@ -78,6 +78,7 @@ function createFifthRecipe(){
 }
 
 export function createMenu(){
+    principal.innerHTML = "";
     createFirstRecipe();
     createSecondRecipe();
     createThirdRecipe();
