@@ -1,6 +1,11 @@
 import { createTitle } from "./home";
 import { createNavBar } from "./home";
 import { principal } from "./home";
+import Mangu from "/src/imgs/Mangu.jpg";
+import Arroz from "/src/imgs/arro.jpg";
+import Sancocho from "/src/imgs/sancocho.jpg";
+import Yaroa from "/src/imgs/Yaroa.jpg";
+import Morirsonando from "/src/imgs/morirsonando.jpg";
 
 export let plateText;
 
@@ -58,23 +63,23 @@ export function creataDescription(plateDescription){
     return descripcion;
 }
 export function createFirstRecipe(){
-    createPlate("/src/imgs/Mangu.jpg", "Mangu", " El mangu es la especialidad del local, es un plato reconocido por su gran valor nutritivo y por la facil obtencion de sus ingredientes.");    
+    createPlate(Mangu, "Mangu", " El mangu es la especialidad del local, es un plato reconocido por su gran valor nutritivo y por la facil obtencion de sus ingredientes.");    
 }
 
 export function createSecondRecipe(){
-    createPlate("/src/imgs/arro.jpg", "La bandera", "La bandera es un termino utilizado para representar este plato que consiste en: Arroz blanco, Habichuelas y Carne (Generalmente de pollo)");
+    createPlate(Arroz, "La bandera", "La bandera es un termino utilizado para representar este plato que consiste en: Arroz blanco, Habichuelas y Carne (Generalmente de pollo)");
 }
 
 function createThirdRecipe(){
-    createPlate("/src/imgs/sancocho.jpg", "Sancocho", " El sancocho es un plato de carne de res, que se sirve en una sopa de arroz blanco, lo que hace de esta una comida que otorga una gran satisfacción.");
+    createPlate(Sancocho, "Sancocho", " El sancocho es un plato de carne de res, que se sirve en una sopa de arroz blanco, lo que hace de esta una comida que otorga una gran satisfacción.");
 }
 
 function createFouthRecipe(){
-    createPlate("/src/imgs/Yaroa.jpg", "Yaroa", "   La yaroa es un tipo de comida callejera que consiste en una capa de platanos verdes majados o de papas fritas cubiertos de una capa de carne y de queso y otros condimentos.");
+    createPlate(Yaroa, "Yaroa", "   La yaroa es un tipo de comida callejera que consiste en una capa de platanos verdes majados o de papas fritas cubiertos de una capa de carne y de queso y otros condimentos.");
 }
 
 function createFifthRecipe(){
-    createPlate("/src/imgs/morirsonando.jpg", "Morir soñando", "El morir soñando es una bebdida que consiste en una mezcla de jugo de naranja fresco y leche evaporada.");
+    createPlate(Morirsonando, "Morir soñando", "El morir soñando es una bebdida que consiste en una mezcla de jugo de naranja fresco y leche evaporada.");
 }
 
 export function createMenu(){

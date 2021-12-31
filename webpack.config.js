@@ -1,15 +1,10 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'production',
-    entry: {
-        index: './src/index.js',
-        home: './src/home.js',
-        menu: './src/menu.js',
-        contact: './src/contact.js'
-      },
+    mode: 'development',
+  entry: './src/index.js',
   output: {
-    filename: '[name].js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
   devtool: 'inline-source-map',

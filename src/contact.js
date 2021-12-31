@@ -2,7 +2,10 @@ import { createTitle } from "./home";
 import { createNavBar } from "./home";
 import { principal } from "./home";
 import {createPlate, plateText} from "./menu";
+import Chef from "/src/imgs/chef.jpg";
+import Manager from "/src/imgs/manager.jpg";
 import './style2.css';
+
 
 let chef = assignPhoto("/src/imgs/chef.jpg");
 
@@ -25,12 +28,12 @@ export function assignPhoto(source){
 
 function createChef(){
     assignPhoto("/src/imgs/chef.jpg");
-    createPlate(chef, "Chef", "Numero de Telefono: 829-829-8298");
+    createPlate(Chef, "Chef", "Numero de Telefono: 829-829-8298");
     createEmail(" Correoreal2@gmail.com");
 }
 
 function createManager(){
-    createPlate("/src/imgs/manager.jpg", "Manager", "Numero de Telefono: 829-829-8295");
+    createPlate(Manager, "Manager", "Numero de Telefono: 829-829-8295");
     createEmail("Correoreal@gmail.com");
 }
 
